@@ -1,43 +1,89 @@
 .hero {
     /* background-color: var(--primary-color-footer); */
-    padding-top: 200px;
-    padding-bottom: 200px;
+    max-width: 768px;
+    min-height: 164px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
 
-    max-width: 1600px;
-    min-height: 600px;
+    @media screen and (min-width: 768px) {
+        max-width: 1200px;
+        min-height: 164px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+
+    }
+
+
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        min-height: 200px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hiro.jpg);
+    url(../images/hiro.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     .hero__title {
-        margin-top: 0;
-        margin-bottom: 30px;
-
-        margin-left: auto;
-        margin-right: auto;
-        width: 696px;
-        height: 120px;
-        left: 452px;
-        top: 280px;
-
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.15;
 
-        letter-spacing: 0.06em;
+
         text-align: center;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
 
         color: var(--h1-text-color);
+
+        @media screen and (min-width: 768px) {
+            width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+            margin-bottom: 30px;
+
+
+            margin-left: auto;
+            margin-right: auto;
+            width: 696px;
+            height: 120px;
+            left: 452px;
+            top: 280px;
+
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+
+            letter-spacing: 0.06em;
+            text-align: center;
+            text-transform: uppercase;
+
+            color: var(--h1-text-color);
+        }
+
     }
 }
 
-.baner .container {
-    text-align: center;
-    padding: 200px 0;
+.container {
+
+
+
+
+    // @media screen and (min-width: 1200px) {
+    //     width: 696px;
+    // }
+
 }
