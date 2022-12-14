@@ -6,10 +6,6 @@ footer {
 }
 
 .box__footer {
-    @media screen and (min-width: 480px) {}
-
-    @media screen and (min-width: 768px) {}
-
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
@@ -43,8 +39,6 @@ footer {
     letter-spacing: 0.03em;
 
     color: var(--logo-primary-text-color);
-
-    @media screen and (min-width: 480px) {}
 
     @media screen and (min-width: 768px) {
         width: 154px;
@@ -156,11 +150,6 @@ footer {
 
 .footer__box__form {
 
-
-    @media screen and (min-width: 480px) {}
-
-    @media screen and (min-width: 768px) {}
-
     @media screen and (min-width: 1200px) {
         display: block;
         margin-left: 93px;
@@ -191,8 +180,6 @@ footer {
 
 .form__name {
 
-    @media screen and (min-width: 480px) {}
-
     @media screen and (min-width: 768px) {
         text-align: center;
     }
@@ -206,16 +193,6 @@ footer {
 .form__box {
     text-align: center;
 
-    @media screen and (min-width: 480px) {
-        // width: 450px;
-
-    }
-
-    @media screen and (min-width: 480px) {
-        // width: 738px;
-
-    }
-
 }
 
 .form__label {
@@ -228,8 +205,6 @@ footer {
     @media screen and (min-width: 480px) {
         width: 450px;
     }
-
-    @media screen and (min-width: 768px) {}
 
     @media screen and (min-width: 1200px) {
         margin-top: 0;

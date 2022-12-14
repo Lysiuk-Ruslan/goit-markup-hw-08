@@ -35,7 +35,6 @@
 
         @media screen and (min-width: 1200px) {
             width: 450px;
-            margin: 15px;
             flex-basis: calc((100% - 4 * 30px) / 4);
         }
     }
@@ -44,16 +43,6 @@
 
 
 .icon {
-    @media screen and (min-width: 480px) {
-        width: auto;
-    }
-
-    @media screen and (min-width: 768px) {}
-
-    @media screen and (min-width: 1200px) {
-        width: 270px;
-    }
-
     margin-bottom: 30px;
 
     display: flex;
@@ -64,6 +53,14 @@
 
     background: #f5f4fa;
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+        width: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .icon-imeg {

@@ -814,6 +814,9 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.main__link .current {
+  color: var(--accent-color);
+}
 @media screen and (min-width: 768px) {
   .main__link {
     display: block;
@@ -823,9 +826,6 @@ header {
   .main__link {
     display: block;
   }
-}
-.main__link .current {
-  color: var(--accent-color);
 }
 
 .main__link:hover, .main__link:focus {
@@ -1076,7 +1076,6 @@ header {
 @media screen and (min-width: 1200px) {
   .section-list .item {
     width: 450px;
-    margin: 15px;
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
   }
@@ -1612,6 +1611,7 @@ footer {
 .form__box {
   text-align: center;
 }
+
 .form__label {
   width: -webkit-fill-available;
   height: 50px;
