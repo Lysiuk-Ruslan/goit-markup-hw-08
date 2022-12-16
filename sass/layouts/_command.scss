@@ -13,6 +13,7 @@
     margin-top: 0;
     margin-bottom: 30px;
 
+
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
@@ -21,13 +22,9 @@
 
     color: var(--title-text-color);
 
-    @media screen and (min-width: 480px) {
-        margin-bottom: 30px;
-    }
-
     @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
         font-size: 36px;
+
     }
 
 
@@ -35,124 +32,102 @@
 
 .command__list {
     text-align: -webkit-center;
+    margin: 0;
 
-    @media screen and (min-width: 480px) {}
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        // width: -15px;
+        margin: -15px;
+
     }
 
     @media screen and (min-width: 1200px) {
         display: flex;
+        margin: -15px;
     }
 
 
     .command__item {
 
-        &:not(:nth-child(1n)) {
-            margin-botton: 30px;
+        max-width: 100%;
+        height: auto;
+        width: 480px;
+
+        &:not(:last-child) {
+            @media screen and (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+
         }
 
-        &:not(:nth-last-child(-n + 1)) {
-            margin-bottom: 30px;
-        }
 
         @media screen and (min-width: 480px) {
-            max-width: 100%;
-            height: auto;
 
-            &:not(:nth-child(1n)) {
-                margin-botton: 30px;
+            @media screen and (min-width: 768px) {
+                width: 354px;
+                margin: 15px;
+                flex-basis: calc((100% - 2 * 30px) / 2);
             }
-
-            &:not(:nth-last-child(-n + 1)) {
-                margin-bottom: 30px;
-            }
-        }
-
-        @media screen and (min-width: 768px) {
-            width: 354px;
-            height: 536px;
-
-            &:not(:nth-child(2n)) {
-                margin-right: 30px;
-            }
-
-            &:not(:nth-last-child(-n + 2)) {
-                margin-bottom: 30px;
-            }
-        }
-
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-            height: 428px;
-
-            &:not(:nth-child(4n)) {
-                margin-right: 30px;
-            }
-
-            &:not(:nth-last-child(-n + 4)) {
-                margin-bottom: 30px;
-            }
-
-
-
-        }
-
-        img {
-            width: 450px;
-
-            @media screen and (min-width: 480px) {
-                width: 450px;
-
-            }
-
-            @media screen and (min-width: 768px) {}
 
             @media screen and (min-width: 1200px) {
-                width: 300px;
-                ;
+                width: 270px;
+                margin: 15px;
+                flex-basis: calc((100% - 4 * 30px) / 4);
             }
 
+            img {
+                width: 450px;
+
+                @media screen and (min-width: 480px) {
+                    width: 480px;
+
+                }
+
+
+                @media screen and (min-width: 1200px) {
+                    width: 300px;
+                    ;
+                }
+
+            }
+
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+
+            background: var(--primary-fon-color);
         }
-
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-
-        background: var(--primary-fon-color);
     }
-}
 
-.command__content {
-    padding-top: 30px;
-    padding-left: 10px;
+    .command__content {
+        padding-top: 30px;
+        padding-left: 10px;
 
-    padding-right: 10px;
-}
+        padding-right: 10px;
+    }
 
-.command__surname__title {
-    margin-top: 0;
-    margin-bottom: 10px;
+    .command__surname__title {
+        margin-top: 0;
+        margin-bottom: 10px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
 
-    color: var(--nav-primary-text-color);
-}
+        color: var(--nav-primary-text-color);
+    }
 
-.command__position {
-    margin-top: 0;
-    margin-bottom: 16px;
+    .command__position {
+        margin-top: 0;
+        margin-bottom: 16px;
 
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
 }
