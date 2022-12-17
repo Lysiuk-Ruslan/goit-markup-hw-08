@@ -19,11 +19,15 @@ header {
 }
 
 .main__nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -171,16 +175,26 @@ header {
 .main__contacts__item {
     margin-left: 0;
 
+    &:not(:last-child) {
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 10px;
+        }
+
+    }
+
     @media screen and (min-width: 768px) {
         margin-left: 0;
-        margin-bottom: 10px;
-
     }
 
     @media screen and (min-width: 1200px) {
         width: 161px;
-        margin-left: 30px;
+
         margin-bottom: 0;
+
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+
     }
 
 
