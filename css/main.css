@@ -421,8 +421,7 @@ textarea {
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #2196f3;
 }
 @media screen and (min-width: 1200px) {
